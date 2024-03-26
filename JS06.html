@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>While and Do... While loops</title>
+</head>
+<body>
+    <script>
+        // Loop to count from 100 to 100 by 10's
+        console.log("Counting from 100 to 100 by 10's:");
+        for (let i = 100; i >= 0; i -= 10) {
+            console.log(i);
+        }
+
+        // Loop to count from 100 to 0 displaying only the odd numbers
+        console.log("Counting from 100 to 0 displaying only the odd numbers:");
+        for (let i = 100; i >= 0; i--) {
+            if (i % 2 !== 0) {
+                console.log(i);
+            }
+        }
+
+        // Loop to print 10 rows of asterisks
+        console.log("Printing 10 rows of asterisks:");
+        for (let i = 1; i <= 10; i++) {
+            let row = '';
+            for (let j = 0; j < i; j++) {
+                row += '*';
+            }
+            console.log(row);
+        }
+    </script>
+</body>
+</html>

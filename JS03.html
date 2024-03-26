@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="output"></div>
+    <script>
+       let atBats = "300";
+       let hits = "65";
+       let singles = "50";
+       let doubles = "5";
+       let triples = "3";
+       let homeruns = "7";
+       let walks = "22";
+
+       let battingaverage = hits / (atBats-walks);
+       let onbasepercentage = (hits + walks) / atBats;
+       let totalbases = singles + (doubles * 2) + (triples * 3) + (homeruns * 4);
+
+       document.getElementById("output").innerHTML = battingaverage;
+       document.getElementById("output").innerHTML += onbasepercentage;
+       document.getElementById("output").innerHTML += totalbases;
+
+    
+    </script>
+</body>
+</html>

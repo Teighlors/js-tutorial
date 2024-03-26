@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tenis Club Bill</title>
+</head>
+<body>
+    
+    <script>
+
+       function fun() {
+       let amount = prompt("How much did the member spend this month in additional charges?");
+       }
+      
+       if (amount >= 250 && amount <= 500) {
+           document.getElementById("output").innerHTML = "<p>10% Discount</p>";
+        } else if (amount > 500 && amount <= 1000) {
+            document.getElementById("output").innerHTML = "<p>12.5% Discount</p>";
+        } else if (amount > 1000 && amount <= 2000) {
+            document.getElementById("output").innerHTML = "<p>15% Discount</p>";
+        } else if (amount > 2000) {
+            document.getElementById("output").innerHTML = "<p>20% Discount</p>";
+        }
+       
+
+        
+
+
+    
+    </script>
+</body>
+</html>
