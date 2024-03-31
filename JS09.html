@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Lifetime Supply</title>
+</head>
+<body>
+    <h1>A lifetime supply of my favorite snake?</h1>
+    <script>
+
+        let age = prompt("How old are you?");
+        let favoriteSnack = prompt("What is your favorite snack?");
+        let amountPerDay = prompt("How many " + favoriteSnack + " do you eat per day?");
+
+        function lifetimeSupply(age, amountPerDay) {
+            const maxAge = 85;
+            const yearsLeft = maxAge - age;
+            const howMany = yearsLeft * amountPerDay * 365;
+            return howMany;
+        }
+
+        
+        let result = lifetimeSupply(parseInt(age), parseInt(amountPerDay));
+        document.write("You will need " + result + " " + favoriteSnack + " to last you until age 85.");
+    </script>
+  
+</body>
+</html>
