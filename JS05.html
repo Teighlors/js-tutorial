@@ -15,7 +15,6 @@
         6. Kiwi         $.79</br>
         7. Apricots     $1.29</br> 
     </p>
-    <div id="price"></div>
 
     <script>
         let option = prompt("What of the day week is it in numerical form?");
@@ -42,51 +41,50 @@
             case "7":
                 console.log("Saturday");
         }
-    </script>
+    
+        let fruitChoice = prompt("Choose a fruit to purchase (1-7):\n1) Apple\n2) Pear\n3) Orange\n4) Grapes\n5) Grapefruit\n6) Kiwi\n7) Apricots");
+        let howmany = prompt("How many fruits would you like to purchase?");
 
-    <script>
-        let fruit = prompt("Choose a fruit (1-7)");
+        let fruit;
+        let price;
 
-        switch (fruit){
-            case "1":
-                console.log("Apple");
+
+        switch (parseInt(fruitChoice)) {
+            case 1:
+                fruit = "Apple";
+                price = .99;
                 break;
-            case "2":
-                console.log("Pear");
+            case 2:
+                fruit = "Pear";
+                price = .79;
                 break;
-            case "3":
-                console.log("Orange");
+            case 3:
+                fruit = "Orange";
+                price = 1.19;
                 break;
-            case "4":
-                console.log("Grapes");
+            case 4:
+                fruit = "Grapes";
+                price = 1.49;
                 break;
-            case "5":
-                console.log("Grapefruit");
+            case 5:
+                fruit = "Grapefruit";
+                price = 1.79;
                 break;
-            case "6":
-                console.log("Kiwi");
+            case 6:
+                fruit = "Kiwi";
+                price = .79;
                 break;
-            case "7":
-                console.log("Apricots");
+            case 7:
+                fruit = "Apricots";
+                price = 1.29;
 
         }
 
-        let Apple = .99;
-        let Pear = .79;
-        let Orange = 1.19;
-        let Grapes = 1.49;
-        let Grapefruit = 1.79;
-        let Kiwi = .79;
-        let Apricots = 1.29;1
-
-        let howmany = prompt("How many fruits would you want to purchase?");
-
-        if (fruit = Apple) {
-            price = howmany * Apple;
-            document.write((howmany) (fruit) (price));
-        }
 
 
+        let totalPrice = price * parseInt(howmany);
+
+        document.write(howmany + " " + fruit + "s $" + totalPrice.toFixed(2));
         
     </script>
 </body>

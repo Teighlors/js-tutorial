@@ -7,29 +7,37 @@
 </head>
 <body>
     <script>
-        // Loop to count from 100 to 100 by 10's
+     
         console.log("Counting from 100 to 100 by 10's:");
-        for (let i = 100; i >= 0; i -= 10) {
+        let i = 100;
+            while (i >= 0) {
             console.log(i);
+            i -= 10;
         }
 
-        // Loop to count from 100 to 0 displaying only the odd numbers
+        
         console.log("Counting from 100 to 0 displaying only the odd numbers:");
-        for (let i = 100; i >= 0; i--) {
-            if (i % 2 !== 0) {
-                console.log(i);
+        let count2 = 100;
+        do {
+            if (count2 % 2 !== 0) {
+                console.log(count2);
             }
-        }
+            count2--;
+        } while (count2 >= 0);
 
-        // Loop to print 10 rows of asterisks
+        
         console.log("Printing 10 rows of asterisks:");
-        for (let i = 1; i <= 10; i++) {
-            let row = '';
-            for (let j = 0; j < i; j++) {
-                row += '*';
-            }
-            console.log(row);
-        }
+        let row = 1;
+            do {
+                let asterisks = "";
+                let col = 1;
+                    do {
+                        asterisks += "*";
+                        col++;
+                    } while (col <= row)
+                    console.log(asterisks);
+                    row++;
+            } while (row <= 10);
     </script>
 </body>
 </html>

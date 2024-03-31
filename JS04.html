@@ -6,27 +6,46 @@
     <title>Tenis Club Bill</title>
 </head>
 <body>
-    
+    <h1>Tennis Club Bill</h1>
+    <div id="output"></div>
     <script>
 
-       function fun() {
        let amount = prompt("How much did the member spend this month in additional charges?");
-       }
-      
+
+       amount = parseFloat(amount);
+       const membershipFee = 500;
+       const taxRate = 6.25/100;
+       let discountPercentage = 0;
+       const subtotal = membershipFee + amount;
+
+
+       
        if (amount >= 250 && amount <= 500) {
            document.getElementById("output").innerHTML = "<p>10% Discount</p>";
+           discountPercentage = 0.10;
         } else if (amount > 500 && amount <= 1000) {
             document.getElementById("output").innerHTML = "<p>12.5% Discount</p>";
+            discountPercentage = 0.125;
         } else if (amount > 1000 && amount <= 2000) {
             document.getElementById("output").innerHTML = "<p>15% Discount</p>";
+            discountPercentage = 0.15;
         } else if (amount > 2000) {
             document.getElementById("output").innerHTML = "<p>20% Discount</p>";
+            discountPercentage = 0.20;
         }
-       
 
-        
+        const discountedAmount = subtotal * (1 - discountPercentage);
+        const taxAmount = discountedAmount * taxRate;
+        const grandTotal = discountedAmount + taxAmount;
 
-
+        document.write("<h2> Bill Invoice: </h2>");
+        document.write("<p> Membership Fee: $" + membershipFee + "</p>");
+        document.write("<p> Additional Fees: $" + amount + "</p>");
+        document.write("<p> Subtotal: $" + subtotal + "</p>");
+        document.write("<p> Discount:" + (discountPercentage * 100) + "%</p>");
+        document.write("<p> Final Fee Bill: $" + discountedAmount.toFixed(2) + "</p>");
+        document.write("<p> Tax: $" + taxAmount.toFixed(2) + "</p>");
+        document.write("<p> Grand Total: $" + grandTotal.toFixed(2) + "</p>");
     
     </script>
 </body>
