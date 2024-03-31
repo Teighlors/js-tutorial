@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let artist = ["Ariana grande", "Mariah Carey", "Chris Brown", "Tyla"];
+
+        console.log(artist);
+
+        let userArtist = prompt("What is your favorite band or artist?");
+
+        if(artist.includes(userArtist)) {
+            document.write("That’s one of my favorites, too.");
+
+        } else {
+            document.write("Sorry, not a favorite of mine.");
+        }
+        
+        let myIntegers = [];
+        let input;
+
+        while ((input = prompt("Enter an integer (or 'xxx' to finsh.): ")) !=="xxx") {
+            myIntegers.push(parseInt(input));
+        }
+
+        let sum = 0;
+        let product = 1;
+        for (let i = 0; i < myIntegers.length; i++) {
+            sum += myIntegers[i];
+            product *= myIntegers[i];
+        }
+
+        let average = sum / myIntegers.length;
+
+        console.log("Sum: " + sum);
+        console.log("Average: " + average);
+        console.log("Product: " + product);
+
+    </script>
+</body>
+</html>
