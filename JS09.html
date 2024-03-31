@@ -24,6 +24,22 @@
         let result = lifetimeSupply(parseInt(age), parseInt(amountPerDay));
         document.write("You will need " + result + " " + favoriteSnack + " to last you until age 85.");
     </script>
+
+    <script>
+        function celsiusToFahrenheit(celsius) {
+            return (celsius * 9/5) + 32;
+        }
+
+        function fahrenheitToCelsius(fahrenheit) {
+            return (fahrenheit - 32) * 5/9;
+        }
+
+        let celsiusInput = prompt("Enter temperature in Celsius:");
+        let fahrenheitInput = prompt("Enter temperature in Fahrenheit:");
+
+        document.write(celsiusInput + "°C is " + celsiusToFahrenheit(celsiusInput) + "°F");
+        document.write(fahrenheitInput + "°F is " + fahrenheitToCelsius(fahrenheitInput) + "°C");
+    </script>
   
 </body>
 </html>
