@@ -1,0 +1,46 @@
+#my-button {
+    background-color: black;
+    color: white;
+    border-color: white;
+    width: 30%;
+    height: 10%;
+    font-size: 20px;
+    font-family: monospace;
+    
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    background-color: black;
+
+}
+
+#blocks {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 auto;
+    text-align: center;
+}
+
+div  {
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+}
+
+#red {
+    background-color: red;
+    margin-bottom: 20px;
+}
+
+#blue {
+    background-color: blue;
+}
+
+button {
+    width: 200px;
+    height: 30px;
+}

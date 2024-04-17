@@ -2,9 +2,19 @@
 <html lang="en">
 <head>
     <title>JavaScript Events</title>
+    <link rel="stylesheet" href="events.css">
 </head>
 <body>
-    <button id=”my-button”>Click me!</button> 
-    <script src=”events.js”></script> 
+    <div class="container" >
+        <button id="my-button" onmouseover="mouseOver()" onmouseout="mouseOut()" >Click me!</button> 
+        <script src="events.js"></script> 
+    </div>
+
+    <div id="blocks">
+    <div id="red"></div>
+    <div id="blue"></div>
+    <p>Click a box to change it's background color</p>
+    <button>Switch Colors</button>
+    </div>
 </body>
 </html>
