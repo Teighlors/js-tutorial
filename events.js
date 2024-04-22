@@ -18,3 +18,12 @@ function mouseOut() {
     document.getElementById("my-button").style.boxShadow = "none";
 
 }
+
+var element = document.getElementById("my-element");
+
+
+element.addEventListener("click", function() {
+    document.getElementById("red").style.backgroundColor = getRandomColor("blue");
+    document.getElementById("blue").style.backgroundColor = getRandomColor();
+});
+
