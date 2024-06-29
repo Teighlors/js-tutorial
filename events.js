@@ -23,7 +23,7 @@ var element = document.getElementById("my-element");
 
 
 element.addEventListener("click", function() {
-    document.getElementById("red").style.backgroundColor = getRandomColor("blue");
+    document.getElementById("red").style.backgroundColor = getRandomColor();
     document.getElementById("blue").style.backgroundColor = getRandomColor();
 });
 
