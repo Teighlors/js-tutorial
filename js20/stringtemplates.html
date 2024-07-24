@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Story Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Story Game</h1>
+        <form id="storyForm">
+            <label for="noun">Noun:</label>
+            <input type="text" id="noun" name="noun" required>
+            <br><br>
+            <label for="verb">Verb:</label>
+            <input type="text" id="verb" name="verb" required>
+            <br><br>
+            <label for="adjective">Adjective:</label>
+            <input type="text" id="adjective" name="adjective" required>
+            <br><br>
+            <button type="submit">Generate Story</button>
+        </form>
+        <h2>Your Story:</h2>
+        <p id="story"></p>
+    </div>
+    <script src="stringtemplates.js"></script>
+</body>
+</html>

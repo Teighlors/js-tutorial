@@ -1,4 +1,8 @@
-fetch('https://jsonplaceholder.typicode.com/todos/1')
+
+  fetch('https://jsonplaceholder.typicode.com/posts/1')
   .then(response => response.json())
-  .then(data => console.log('To-Do Item:', data))
+  .then(data => {
+    const container = document.getElementById('data-container');
+    container.innerHTML = `<pre>${JSON.stringify(data, null, 2)}</pre>`;
+  })
   .catch(error => console.error('Error:', error));

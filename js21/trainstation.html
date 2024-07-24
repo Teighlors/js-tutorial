@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Public Transportation System</title>
+    <script src="station.js" defer></script>
+</head>
+<body>
+    <h1>Public Transportation System</h1>
+    <div>
+        <h2>Add Vehicle</h2>
+        <select id="vehicle-type">
+            <option value="Bus">Bus</option>
+            <option value="Train">Train</option>
+            <option value="Subway">Subway</option>
+            <option value="Tram">Tram</option>
+        </select>
+        <input type="text" id="vehicle-number" placeholder="Vehicle Number">
+        <input type="number" id="vehicle-capacity" placeholder="Capacity">
+        <input type="text" id="vehicle-route" placeholder="Route">
+        <button id="add-vehicle-btn">Add Vehicle</button>
+    </div>
+    <div>
+        <h2>Add Passenger</h2>
+        <input type="text" id="passenger-name" placeholder="Name">
+        <input type="number" id="passenger-age" placeholder="Age">
+        <input type="text" id="passenger-destination" placeholder="Destination">
+        <select id="vehicle-selection">
+            <option value="" disabled selected>Select Vehicle</option>
+        </select>
+        <button id="add-passenger-btn">Add Passenger</button>
+    </div>
+    <div>
+        <h2>Remove Passenger</h2>
+        <input type="text" id="remove-passenger-name" placeholder="Passenger Name">
+        <button id="remove-passenger-btn">Remove Passenger</button>
+    </div>
+    <div>
+        <h2>List Passengers</h2>
+        <button id="list-passengers-btn">List Passengers</button>
+        <pre id="passenger-list"></pre>
+    </div>
+    <div>
+        <h2>List Vehicles</h2>
+        <button id="list-vehicles-btn">List Vehicles</button>
+        <pre id="vehicle-list"></pre>
+    </div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Manipulation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+        }
+        .container {
+            margin-top: 20px;
+        }
+        textarea {
+            width: 100%;
+            height: 100px;
+            margin-bottom: 20px;
+        }
+        button {
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>String Manipulation Tool</h1>
+    <div class="container">
+        <label for="inputString">Enter your string:</label>
+        <textarea id="inputString" placeholder="Type something..."></textarea>
+        
+        <div>
+            <button onclick="toUpperCase()">Uppercase</button>
+            <button onclick="toLowerCase()">Lowercase</button>
+            <button onclick="trimString()">Trim</button>
+            <button onclick="reverseString()">Reverse</button>
+            <button onclick="charCount()">Character Count</button>
+            <button onclick="resetFields()">Reset</button>
+        </div>
+        
+        <label for="resultString">Result:</label>
+        <textarea id="resultString" readonly></textarea>
+    </div>
+    <script src="strings.js"></script>
+</body>
+</html>

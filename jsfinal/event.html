@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Organizer</title>
+    <link rel="stylesheet" href="event.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body>
+    <header>
+        <h1>Event Organizer</h1>
+    </header>
+    <main>
+        <section id="event-form">
+            <h2>Add New Event</h2>
+            <form id="form">
+                <label for="name">Event Name:</label>
+                <input type="text" id="name" required>
+                <label for="date">Date:</label>
+                <input type="date" id="date" required>
+                <label for="time">Time:</label>
+                <input type="time" id="time" required>
+                <label for="location">Location:</label>
+                <input type="text" id="location" required>
+                <label for="notes">Notes:</label>
+                <textarea id="notes"></textarea>
+                <button type="submit">Add Event</button>
+            </form>
+        </section>
+        <section id="event-list">
+            <h2>Your Events</h2>
+            <input type="text" id="search" placeholder="Search events...">
+            <div id="events"></div>
+        </section>
+        <section id="map" style="height: 400px;"></section>
+    </main>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="event.js"></script>
+</body>
+</html>
